@@ -71,8 +71,45 @@
     background: var(--first-color);
 }  
 .answer.correct {
-    animation: correct 3s ease forwards;
-}
+    animation: correct 4s ease forwards;
+  }
+  
+@keyframes correct {
+    0%,
+    21%,
+    41% {
+      background: var(--first-color);
+    }
+    20%,
+    40%,
+    60% {
+        background: linear-gradient(#0f0225, #2b0a60);
+        }
+    61%,
+    100% {
+      background: rgb(2, 124, 2);
+    }
+  }
+.answer.wrong {
+    animation: wrong 4s ease forwards;
+  }
+@keyframes wrong {
+    0%,
+    21%,
+    41% {
+      background: var(--first-color);
+    }
+    20%,
+    40%,
+    60% {
+        background: linear-gradient(#0f0225, #2b0a60);    
+    }
+    61%,
+    100% {
+      background: rgb(175, 0, 0);
+    }
+  }
+  
 .bottom{
     height: 50%;
 }

@@ -3,10 +3,10 @@ export default function Trivia() {
         <div className="trivia">
             <div className="question">What atmospheric component plays a crucial role in protecting Earth from harmful solar radiation?</div>
             <div className="answers">
-                <div className="answer">Nitrogen</div>
-                <div className="answer">Oxygen</div>
-                <div className="answer">Ozone</div>
-                <div className="answer">Argon</div>
+                <div className="answer correct">Nitrogen</div>
+                <div className="answer wrong">Oxygen</div>
+                <div className="answer wrong">Ozone</div>
+                <div className="answer wrong">Argon</div>
             </div>
         </div>
   )
